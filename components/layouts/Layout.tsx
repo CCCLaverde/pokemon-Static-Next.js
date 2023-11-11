@@ -4,7 +4,7 @@ import { Navbar } from "../ui";
 
 interface Props {
     title?: string;
-    children: JSX.Element
+    children?: React.ReactNode
 }
 
 export const Layout: FC < Props > = ({ children, title }) => {
