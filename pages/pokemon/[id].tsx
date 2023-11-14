@@ -3,6 +3,7 @@ import { Layout } from "@/components/layouts"
 import { Pokemon } from "../../interfaces"
 import { GetStaticProps, NextPage, GetStaticPaths } from "next"
 import { Grid, Card, Text, Button, Container, Image } from '@nextui-org/react';
+import { useEffect } from "react";
 
 interface Props {
   pokemon: Pokemon
@@ -10,8 +11,22 @@ interface Props {
 
 const PokemonPage: NextPage<Props> = ({ pokemon }) => {
 
+  const onToggleFavorite = () => {
+    console.log('ID', pokemon.id);
+    localStorage.setItem('Favorites', `${pokemon.id}`)
+    
+  }
+
+  console.log('Laverde');
+  
+
+  useEffect(() => {
+    console.log(useEffect);
+    
+  }, [])
+
   return (
-    <Layout title="Algun pokemon">
+    <Layout title= { pokemon.name } >
 
       <Grid.Container css={{ marginTop: '5px' }} gap={2} >
         <Grid xs={12} sm={4} >
@@ -34,6 +49,7 @@ const PokemonPage: NextPage<Props> = ({ pokemon }) => {
               <Button
                 color='gradient'
                 ghost
+                onClick={ onToggleFavorite }
               >
                 Guardar en favoritos
               </Button>
