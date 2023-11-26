@@ -175,6 +175,11 @@
   dependencies:
     tslib "^2.4.0"
 
+"@types/canvas-confetti@^1.6.3":
+  version "1.6.3"
+  resolved "https://registry.yarnpkg.com/@types/canvas-confetti/-/canvas-confetti-1.6.3.tgz#faaa8bede76b10f283fe717086d0709100a54869"
+  integrity sha512-yKVMDzWJ6g0s8TDI3VERfLMCOh0oHqZUnfK+o3VVjR2mFsLynUgb2lR+3IRaEJMza3BKbV9pkoirmM23YhKozA==
+
 "@types/json5@^0.0.29":
   version "0.0.29"
   resolved "https://registry.npmjs.org/@types/json5/-/json5-0.0.29.tgz"
@@ -474,6 +479,11 @@ caniuse-lite@^1.0.30001406:
   version "1.0.30001559"
   resolved "https://registry.npmjs.org/caniuse-lite/-/caniuse-lite-1.0.30001559.tgz"
   integrity sha512-cPiMKZgqgkg5LY3/ntGeLFUpi6tzddBNS58A4tnTgQw1zON7u2sZMU7SzOeVH4tj20++9ggL+V6FDOFMTaFFYA==
+
+canvas-confetti@^1.9.2:
+  version "1.9.2"
+  resolved "https://registry.yarnpkg.com/canvas-confetti/-/canvas-confetti-1.9.2.tgz#c9f74098c7fdf66dd9d1aab5d381061cf74e48f0"
+  integrity sha512-6Xi7aHHzKwxZsem4mCKoqP6YwUG3HamaHHAlz1hTNQPCqXhARFpSXnkC9TWlahHY5CG6hSL5XexNjxK8irVErg==
 
 chalk@^4.0.0:
   version "4.1.2"
